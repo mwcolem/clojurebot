@@ -13,7 +13,7 @@
   (client/post "https://hooks.slack.com/services/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"
 	{:body (generate-string {:channel "#bot-testing"
 				:username "clojurebot"
-				:icon_emoji ":ghost"
+				:icon_emoji ":ghost:"
 				:text message})}))
 
 (defmulti do-command (fn [command _ _] command))
